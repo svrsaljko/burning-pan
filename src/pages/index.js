@@ -1,4 +1,11 @@
 import React from "react"
-export default function Home() {
-  return <h1>Hello Gatsby!</h1>
+import Layout from "../components/layout"
+import Body from "../components/body"
+
+export default function Index() {
+  return (
+    <Layout>
+      <Body />
+    </Layout>
+  )
 }
