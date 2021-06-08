@@ -17,7 +17,6 @@ export const query = graphql`
     allMarkdownRemark {
       edges {
         burningPan: node {
-          id
           frontmatter {
             description
             title
@@ -26,7 +25,6 @@ export const query = graphql`
               featuredImage {
                 childImageSharp {
                   gatsbyImageData
-                  id
                 }
               }
             }
@@ -36,25 +34,3 @@ export const query = graphql`
     }
   }
 `
-
-// export const query = graphql`
-//   query BurningPanData {
-//     allMarkdownRemark(
-//       filter: { fileAbsolutePath: { regex: "/(data/region)/" } }
-//     ) {
-//       cards: nodes {
-//         card: frontmatter {
-//           title
-//           slug
-//           featuredImage_alt
-//           briefDescription
-//           featuredImage {
-//             childImageSharp {
-//               gatsbyImageData
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `

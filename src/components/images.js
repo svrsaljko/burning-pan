@@ -1,6 +1,7 @@
 import React from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from "styled-components"
+import { v4 as uuidv4 } from "uuid"
 
 const Container = styled.div`
   display: flex;
@@ -21,10 +22,9 @@ const Images = ({ images }) => {
   return (
     <Container>
       {images.map(({ featuredImage, featuredImage_alt }) => {
-        const { id } = featuredImage
         const image = getImage(featuredImage)
         return (
-          <Wrapper key={id}>
+          <Wrapper key={uuidv4()}>
             <GatsbyImage
               loading="eager"
               image={image}

@@ -17,6 +17,7 @@ const Wrapper = styled.div`
 
 const Body = ({ data }) => {
   const { description, images } = data
+  console.log("description: ", description)
   return (
     <Container>
       <Wrapper>

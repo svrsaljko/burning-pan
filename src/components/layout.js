@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "../components/header"
+import Footer from "../components/footer"
 import styled, { ThemeProvider } from "styled-components"
 import "../css/index.css"
 
@@ -17,7 +18,7 @@ const Container = styled.div`
 const Layout = ({ children }) => {
   return (
     <Container>
-      <Header /> {children}
+      <Header /> {children} <Footer />
     </Container>
   )
 }
