@@ -18,7 +18,7 @@ export const query = graphql`
       edges {
         burningPan: node {
           frontmatter {
-            description
+            about
             title
             images {
               featuredImage_alt

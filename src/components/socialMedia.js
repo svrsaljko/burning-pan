@@ -12,12 +12,23 @@ const Container = styled.div`
   justify-content: space-around;
   margin-left: 6rem;
   margin-right: 6rem;
+  @media (min-width: 480px) {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
 `
 
 const Wrapper = styled.a`
+  text-decoration: none;
   font-size: 3rem;
   color: ${({ color }) => color};
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
 `
+
+// Find a way to remove underline
 
 const SocialMedia = () => {
   return (
