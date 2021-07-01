@@ -35,14 +35,20 @@ const SocialMedia = () => {
     <Container>
       <Wrapper
         color={"#FF0000"}
+        target="_blank"
         href="https://www.youtube.com/channel/UCqKLXnAkOyv337CB6rOBavg"
       >
         <IoLogoYoutube />
       </Wrapper>
-      <Wrapper color={"#e95950"} href="https://www.instagram.com/ahzaton/">
+      <Wrapper
+        target="_blank"
+        color={"#e95950"}
+        href="https://www.instagram.com/domec95/"
+      >
         <IoLogoInstagram />
       </Wrapper>
       <Wrapper
+        target="_blank"
         color={"#0072b1"}
         href="https://www.linkedin.com/in/domagoj-cirjak-65763720b/"
       >

@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Images from "./images"
 import About from "./about"
+import Video from "./video"
 
 const Container = styled.div`
   display: flex;
@@ -27,6 +28,14 @@ const Body = ({ data }) => {
       <Wrapper>
         <About about={about} />
       </Wrapper>
+      {/* <Wrapper>
+        <Video
+          videoTitle={"burning-pan"}
+          videoSrcURL={
+            "https://www.youtube.com/embed/watch?v=a5rYbKqqO9g&ab_channel=BurningPan"
+          }
+        />
+      </Wrapper> */}
     </Container>
   )
 }
