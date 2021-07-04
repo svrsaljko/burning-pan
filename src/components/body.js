@@ -9,10 +9,10 @@ const Container = styled.div`
   flex-direction: column;
 `
 const Wrapper = styled.div`
+  width: 100%;
   box-shadow: 0;
   display: grid;
   justify-content: center;
-  margin-top: 7rem;
   @media (min-width: 480px) {
     margin: 0;
   }
@@ -25,17 +25,10 @@ const Body = ({ data }) => {
       <Wrapper>
         <Images images={images} />
       </Wrapper>
+      <Video />
       <Wrapper>
         <About about={about} />
       </Wrapper>
-      {/* <Wrapper>
-        <Video
-          videoTitle={"burning-pan"}
-          videoSrcURL={
-            "https://www.youtube.com/embed/watch?v=a5rYbKqqO9g&ab_channel=BurningPan"
-          }
-        />
-      </Wrapper> */}
     </Container>
   )
 }
